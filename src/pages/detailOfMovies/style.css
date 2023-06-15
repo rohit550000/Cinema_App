@@ -1,0 +1,218 @@
+.movieContainer{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.BackImageContainer {
+    width: 90%;
+}
+
+.BackImage {
+    height: 50rem;
+    width: 100%;
+    object-fit:cover;
+    object-position: 0 38%; 
+}
+
+.moviDetail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    bottom: 25rem;
+    width: 80%;
+}
+
+
+.movieLeft {
+    margin-right:4rem;
+}
+
+.insideImg {
+    width:35rem;
+    height:50rem;
+    border-radius:1rem;
+}
+
+.rightDetail {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    height: 45rem;
+}
+
+.movie__detailRightTop > div{
+    text-shadow: 0px 0px 5px #000000;
+    margin-bottom: .5rem;
+}
+
+.mName{
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+}
+.mtagline{
+    font-size:1.4rem;
+    font-weight: 600;
+    color: rgb(223, 110, 4);
+}
+.mrating{
+font-size:1.3rem;
+color: #13f356;
+display: flex;
+gap:1rem;
+}
+
+.mRuntime{
+    font-size:1.3rem;
+    color: red;
+    font-weight: 600;
+}
+
+.mReleaseDate{
+    font-size:1.2rem;
+    color: rgb(221, 255, 0);
+    font-weight: 600;
+}
+
+.mgenresContent {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.mGenre{
+    padding:1rem 2rem;
+    border: 2px solid white;
+    border-radius:3rem;
+    margin-right: 1rem;
+    font-size:1.5rem;
+    cursor: pointer;
+}
+
+.mGenre:hover{
+    background-color:black;
+}
+
+
+.synopsisDetail {
+    margin: 2rem 0;
+    flex: 0.8;
+}
+
+.synopText {
+    font-size:2.2rem;
+    margin-bottom:2rem;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.sysDescrip{
+    font-size:1.5rem;
+    font-style: italic;
+
+}
+
+
+@media(max-width:991px){
+    .BackImage {
+        height: 45rem;
+    }
+    .insideImg {
+        width:30rem;
+        height:46rem;
+    }
+
+    .mName{
+        font-size: 2rem;
+    }
+
+    .mtagline,.mrating,.mRuntime,.mReleaseDate{
+        font-size:1.2rem;
+    }
+
+    .mGenre{
+        font-size:1.4rem;
+        padding:.9rem 1.8rem;
+    }
+    .synopText{
+        font-size:2rem;
+    }
+    .sysDescrip{
+        font-size:1.4rem;
+    }
+
+
+    
+
+}
+
+@media(max-width:768px){
+    .BackImage {
+        height: 40rem;
+    }
+    .insideImg {
+        width:27rem;
+        height:41rem;
+    }
+    .mName{
+        font-size: 1.9rem;
+    }
+    .mtagline,.mrating,.mRuntime,.mReleaseDate{
+        font-size:1.1rem;
+    }
+    .mGenre{
+        font-size:1.3rem;
+        padding:.7rem 1.6rem;
+    }
+
+    .synopText{
+        font-size:1.8rem;
+    }
+    .sysDescrip{
+        font-size:1.3rem;
+    }
+  
+}
+
+
+@media(max-width:450px){
+    .BackImage {
+        height: 30rem;
+    }
+    .insideImg {
+        width:25rem;
+        height:35rem;
+    }
+  
+    .mName{
+        font-size: 1.8rem;
+    }
+
+    .mtagline,.mrating,.mRuntime,.mReleaseDate{
+        font-size:1rem;
+    }
+
+    .mGenre{
+        font-size:1.2rem;
+        padding:.5rem 1.2rem;
+    }
+
+    .synopText{
+        font-size:1.5rem;
+    }
+    .sysDescrip{
+        font-size:1rem;
+    }
+  
+}

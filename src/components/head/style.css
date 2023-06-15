@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:.3rem 1%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background: transparent;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo span{
+    font-size:2.5rem;
+    font-weight:bold
+  }
+  .logo img{
+    height: auto;
+    max-width: 30%;
+  }
+
+  .links span{
+    font-size: 2rem;
+    margin-right:1.9rem;
+    color: white;
+    font-weight:600;
+  }
+
+
+  .links span:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(228, 66, 11);
+  }
+
+
+  @media(max-width:991px){
+
+  }
+  
+  @media(max-width:768px){
+    .logo span{
+      margin-right:1rem;
+      font-size: 2rem;
+    }
+    .links span{
+      font-size:1.7rem;
+      margin-right:1rem;
+    }
+    
+  }
+  
+  
+  @media(max-width:450px){
+    .logo span{
+      margin-right:6rem;
+    }
+
+  }
